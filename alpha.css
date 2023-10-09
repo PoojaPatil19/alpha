@@ -1,0 +1,340 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    background-image: url(./image/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f5f5f5;
+}
+#logo{
+    display: none;
+}
+
+header{
+     display: flex; 
+     /* context show in one line  */
+     justify-content: space-between;
+     align-items: center;
+     padding: 0rem 1rem;
+}
+header #left h1{
+    /* 1 rem=16px */
+    font-size: 1.2rem;
+    color: white;
+}
+header #right #hm{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    /* does not show  or remove circle or dot. */
+    margin: 0;
+}
+header #right ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+header #right ul li a button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(230, 216, 216);
+    /* thikness  */
+    border-radius: 5px;
+    width: 5rem;
+    height: 2rem;
+}
+ #drop{
+    position: relative;
+}
+ #menu{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    width: 170%;
+    top: 100%;
+    left: -79%;
+    display: none;
+
+}
+header #right #hm #drop #menu li a{
+    color: black;
+    border-bottom: 1px solid rgb(197, 189, 189);
+}
+ #drop :hover menu{
+display: block;
+}
+header #left h1 span{
+    font-weight: 100;
+    /* it is reduse the thikness */
+}
+
+#alpha{
+    text-align: center;
+    color: white;
+    margin-top: 10rem;
+}
+#alpha h1{
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 0rem;
+}
+#alpha p{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+#alpha button{
+    background-color: white;
+    width: 12.5%;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: grey;
+}
+ #alpha #learn{
+    background-color: transparent;
+    border: 2px solid rgb(190, 182, 182);
+    color: white;
+
+ }
+ #intro{
+    background-color: #f5f5f5 ;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10rem;
+    padding-top: 2rem;
+    color: rgb(97, 93, 91);
+}
+#intro h1{
+font-size: 2rem;
+}
+#intro p{
+    font-size: 1.2rem;
+    border-top:2px solid rgb(220, 213,213); 
+    margin: auto;
+    padding: 2rem 0rem;
+    width: 60%;
+}
+#intro img{
+    width: 100%;
+}
+
+#icon{
+/* when we go for displey flex is control childrin   so we use inline block*/
+background-color: white;
+width: 70%;
+margin: auto;
+margin-top:2rem ;
+border-radius: 5px;
+font-size: 1rem;
+}
+#icon section{
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#icon div{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    padding-top: 2rem;
+}
+#icon div i{
+    font-size: 2rem;
+    color: white;
+    background-color: #e89980;
+    border-radius: 100%;
+    padding: 1.5rem 1.5rem;
+}
+#icon div  .fa-solid.fa-chart-area{
+    background-color: #7fcdb8;
+    padding: 1.5rem 1.5rem;
+}
+#icon div .fa-solid.fa-cloud{
+    background-color: #90b0ba ;
+    padding: 1.5rem 1.5rem;
+}
+#icon div .fa-solid.fa-lock{
+    background-color: #e5cb95  ;
+    padding: 1.5rem 1.5rem;
+}
+#div1{
+border-right: 2px solid #e5e5e5;
+border-bottom: 2px solid #e5e5e5;
+position: relative;
+top: 2px;
+left: 2px;
+}
+#div4{
+    border-top: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    }
+    /* positin absulate means does not contain any space */
+#card{
+/* background-color: white; */
+background-color: #f5f5f5;
+width: 70%;
+margin: auto;
+margin-top: 2rem;
+display: flex;
+justify-content: space-between;
+text-align: center;
+margin-bottom: 4rem;
+font-family: 300;
+    }
+    #card div{
+        background-color: white;
+        width: 48%;
+        text-align: center;
+        border-radius: 5px;
+        padding-bottom: 4px;
+    }
+    #card div img{
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: #f5f5f5 ;
+    }
+    #card div button{
+         border-radius: 5px; 
+        width: 25%;
+        height: 3rem;
+        color: #444444;
+        background-color: white;
+        border-radius: 5px solid #e8e8e8;
+        /* font-family: 300; */
+    }
+#signup{
+    text-align: center;
+    background-color: #e89980 ;
+    color: white;
+    margin-top: 0.5rem;
+    padding: 2.5rem  4rem 3rem; 
+}
+#signup h1{
+    font-size: 2.5rem;
+     font-weight: 500; 
+}
+#signup p{
+    font-size:1.1rem ;
+    font-weight: 400;
+}
+#signup input{
+    width: 20%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #eba893;
+   outline: none;
+   /* when we click on button/email show border color is black  */
+   margin-right: 1rem;
+}
+
+#signup input::placeholder{
+    outline: none;
+   color: white;
+   font-size: 1rem;
+   font-weight: 100;
+}
+#signup button{
+    color:#eba893 ;
+    background-color: #ffff;
+    border: none;
+    height: 3rem;
+    width: 10%;
+    border-radius: 5px;
+}
+footer{
+    justify-content: center;
+    background-color: #f0f0f0 ;
+    
+}
+footer #end{
+text-align: center;
+}
+footer #end #symbol{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: 400;
+    gap: 20px;
+    color: #d3d4d6;
+    
+}
+footer #end h1{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+     gap: 10px;
+     font-size: 15px;
+     font-family: 100;
+     padding: 1rem 2rem 6rem 0rem;
+     /* margin: 0%; */
+     font-weight: 500;
+     
+}
+
+
+
+/* =====================mobile=============== */
+@media(max-width:600px){
+    body{
+        background-size: 190%;
+       background-position-x: center;
+    }
+    #logo{
+        display: inline-block;
+        color: white;
+        background-color: #d3d4d6;
+        border-radius: 5px;
+        padding: 5px 25px;
+        margin: 0.5rem;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        width: 1%;
+    }
+    header{
+        display: none;
+    }
+    #alpha{
+        width: 80%;
+        margin: auto;
+        margin-top: 0rem;
+    }
+    alpha h1{
+        font-size: 2rem;
+    }
+    #alpha p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    #alpha button{
+        width: 100%;
+        margin-bottom: 1rem;     
+    }
+    #intro{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    #intro h1{
+        font-size: 1.5rem;
+        
+     }   
+    #intro p{
+            font-size: 1.1rem;
+            
+            margin: auto;
+            padding: 2rem 0rem;
+            width: 90%;
+        
+    }
+}
+

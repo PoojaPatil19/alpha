@@ -1,0 +1,43 @@
+body{
+    background-color: red;
+    color : white;
+}
+#desktop{
+display: none;
+/* dont show other other two content  */ 
+}
+
+#mobile{
+display: none;
+}
+#tab{
+display: none;
+}
+
+
+@media(max-width:600px){
+    /* mobile version */
+    body{
+        background-color: yellow;
+        color: chocolate;
+    }
+    #mobile{
+        display: inline-block;
+    }
+
+}
+
+
+@media(min-width:601px) and (max-width:1000px){
+body{
+    background-color: blue;
+}
+#tab{
+    display: inline-block;
+}
+}
+@media(min-width:1001px){
+    #desktop{
+        display: inline-block;
+    }
+}
